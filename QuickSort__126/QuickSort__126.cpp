@@ -11,12 +11,12 @@ void input() {
 	while (true)
 	{
 		cout << "Masukkan panjang element array";
-			cin >> n;
+		cin >> n;
 
-			if (n <= 20)
-				break;
-			else
-				cout << "\nMaksimum panjang array adalah 20" << endl;
+		if (n <= 20)
+			break;
+		else
+			cout << "\nMaksimum panjang array adalah 20" << endl;
 	}
 
 	cout << "\n-------------------" << endl;
@@ -26,9 +26,25 @@ void input() {
 	for (int i = 0; i < n; i++)
 	{
 		cout << "<" << (i + 1) << ">"
-			cin >> arr[i]; 
-	} 
+			cin >> arr[i];
+	}
+}
 
+//Swap the element st index x with the element at index y
+void swap(int x, int y)
+{
+	int temp;
+
+	temp = arr[x];
+	arr[x] = arr[y];
+	arr[y] = arr[x];
+}
+
+void q_short(int low, int high)
+{
+	int pivot, i, j;
+	if (low > high)                                    //Langkah Algoritma NO.1
+}
 
 	
 
