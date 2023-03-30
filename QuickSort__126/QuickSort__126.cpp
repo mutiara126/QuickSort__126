@@ -60,6 +60,8 @@ void q_short(int low, int high)
 	{
 		//Search for an element greater tyhan pivot 
 		while ((arr[i] <= pivot) && (i <= high))     //Langkah Algoritma NO.5
+		{
+			i++;                                    //Langkah Algoritma NO.6
 
 
 
