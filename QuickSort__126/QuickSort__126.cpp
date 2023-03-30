@@ -52,6 +52,7 @@ void q_short(int low, int high)
 
 	pivot = arr[low];                                 //Langkah Algoritma NO.2
 
+	i = low + 1;                                      //Langkah Algoritma NO.3
 
 	
 
