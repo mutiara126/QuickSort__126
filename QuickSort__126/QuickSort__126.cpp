@@ -10,7 +10,7 @@ int n;
 void input() {
 	while (true)
 	{
-		cout << "Masukkan panjang element array";
+		cout << "Masukkan panjang element array: ";
 		cin >> n;
 
 		if (n <= 20)
@@ -26,7 +26,7 @@ void input() {
 	for (int i = 0; i < n; i++)
 	{
 		cout << "<" << (i + 1) << ">";
-			cin >> arr[i];
+		cin >> arr[i];
 	}
 }
 
@@ -37,7 +37,7 @@ void swap(int x, int y)
 
 	temp = arr[x];
 	arr[x] = arr[y];
-	arr[y] = arr[x];
+	arr[y] = temp;
 }
 
 void q_short(int low, int high)
@@ -86,7 +86,7 @@ void q_short(int low, int high)
 	if (low < j);                               //Langkah Algoritma NO.11
 	{
 		//Move the pivot to its correct position in the list 
-		swap(low, j - 1);
+		swap(low, j);
 		mov_count++;
 	}
 	//Sort the list on the left of pivot using quick sort
@@ -117,9 +117,6 @@ int main()
 	q_short(0, n - 1);                       //Sort the array using quick sort
 	display();
 	system("pause");
+
+	return 0;
 }
-
-
-
-
-
