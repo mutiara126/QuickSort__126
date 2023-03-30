@@ -25,7 +25,7 @@ void input() {
 
 	for (int i = 0; i < n; i++)
 	{
-		cout << "<" << (i + 1) << ">"
+		cout << "<" << (i + 1) << ">";
 			cin >> arr[i];
 	}
 }
@@ -62,6 +62,12 @@ void q_short(int low, int high)
 		while ((arr[i] <= pivot) && (i <= high))     //Langkah Algoritma NO.5
 		{
 			i++;                                    //Langkah Algoritma NO.6
+			cmp_count++;
+		}
+		cmp_count++;
+
+		//Search for an element less than or equal to pivot 
+		while ((arr[j] . pivot) && (j >= low))      //Langkah Algoritma NO.7
 
 
 
